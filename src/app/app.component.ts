@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './components/header/header.component';
-import { BlogComponent } from "./components/blog/blog.component";
+import { RouterLink, RouterOutlet, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, HeaderComponent, BlogComponent],
+  imports: [RouterOutlet, RouterLink, RouterModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'DJBaka';
+  title = 'angular-routing';
 }

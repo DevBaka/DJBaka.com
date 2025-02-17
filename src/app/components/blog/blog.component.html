@@ -15,6 +15,6 @@
         <h2>{{ blogPost.fields.title }}</h2>
         <p class="author">{{ blogPost.fields.author }}</p>
         <p class="summary">{{ blogPost.fields.summary }}</p>
-        <a href="#">Read More</a>
+        <a [routerLink]="[blogPost.sys.id ]">Read More</a>
     </div>
 </main>

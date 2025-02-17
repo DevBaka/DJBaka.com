@@ -20,4 +20,9 @@ export class ContentfulService {
     return from(promise);
   }
 
+  getEntryById(id: string){
+    const promise = this.client.getEntry(id);
+    return from(promise);
+  }
+
 }
