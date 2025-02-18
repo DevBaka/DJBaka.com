@@ -1,18 +1,22 @@
-import { Component, signal } from '@angular/core';
-import { GreetingComponent } from '../components/greeting/greeting.component';
+import { Component, HostListener } from '@angular/core';
 import { BlogComponent } from '../components/blog/blog.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [GreetingComponent,BlogComponent],
+  imports: [BlogComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  homeMessage = signal("hello world");
 
-  keyUpHandler(event: KeyboardEvent){
-    console.log('user pressed the ' + event.key + ' key');
+
+  mouseX = 0;
+  mouseY = 0;
+
+  @HostListener('document:mousemove', ['$event'])
+  onMouseMove(event: MouseEvent) {
+    this.mouseX = event.clientX;
+    this.mouseY = event.clientY;
   }
 }
