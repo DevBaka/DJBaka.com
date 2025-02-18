@@ -5,13 +5,26 @@
         <img [src]="blogPost.fields.featuredImage.fields.file.url">
         <h2>{{ blogPost.fields.title }}</h2>
         <p class="author">{{ blogPost.fields.author }}</p>
-        <p class="content">{{ blogPost.fields.content }}</p>
+        <p class="content">
+            <markdown ngPreserveWhitespaces>
+                {{ blogPost.fields.article }}
+            </markdown>
+        </p>
+            <div [innerHtml]="_returnHtmlFromRichText(blogPost.fields.article)">
+            </div>
+        
+
+        
+
 
 
     </div>
-<!--<pre>
-    {{ blogPost | json }}
-</pre>-->
+    <p>
+        raw:
+    </p>
+<pre> 
+    {{ blogPost.fields.article | json }}
+</pre>
 </main>
 
 <p>Blog post ending</p>
