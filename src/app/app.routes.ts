@@ -5,7 +5,7 @@ import { BlogPostComponent } from './components/blog/blog-post/blog-post.compone
 
 export const routeConfig: Routes = [
     {
-        path: 'home',
+        path: '',
         component: HomeComponent,
         title: 'Home Page'
     },

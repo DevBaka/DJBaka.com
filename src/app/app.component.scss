@@ -1,3 +1,49 @@
-main {
-    padding: 16px;
-}
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dunkles Thema für deinen Hard Techno Look */
+    color: #fff; /* Weißer Text auf dunklem Hintergrund */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  /* Content Wrapper */
+  .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Der Content Bereich soll mindestens 80% der Bildschirmhöhe einnehmen */
+  }
+  
+  /* Footer */
+  app-footer {
+    background-color: #333; /* Dunkler Footer */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Optional: Animierte Scroll-Effekte */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .content-wrapper {
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Weitere Anpassungen kannst du hier hinzufügen */
+  

@@ -1,18 +1,56 @@
-header {
+.app-header {
+    background-color: #222; /* Dunkler Hintergrund */
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für den Header */
+  }
+  
+  .navbar {
     display: flex;
-    padding-inline: 16px;
-    padding-block: 8px;
-    background-color: #333;
-    color: white;
-    align-items: center;
     justify-content: space-between;
-}
-
-/*header {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
     align-items: center;
-}*/
-
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo {
+    .logo {
+      width: 120px; /* Größe des Logos */
+      height: auto;
+    }
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navbar-links li {
+    display: inline;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #ff4081; /* Hover-Farbe für Links */
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
