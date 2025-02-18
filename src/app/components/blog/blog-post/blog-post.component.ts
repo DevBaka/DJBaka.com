@@ -3,14 +3,13 @@ import { ActivatedRoute } from '@angular/router';
 import { ContentfulService } from '../../../services/contentful.service';
 import { Observable } from 'rxjs';
 import { CommonModule, JsonPipe } from '@angular/common';
-import { MarkdownModule } from 'ngx-markdown';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import { Document } from '@contentful/rich-text-types';
 
 @Component({
   selector: 'app-blog-post',
   standalone: true,
-  imports: [JsonPipe, CommonModule, MarkdownModule],
+  imports: [JsonPipe, CommonModule],
   templateUrl: './blog-post.component.html',
   styleUrl: './blog-post.component.scss'
 })
