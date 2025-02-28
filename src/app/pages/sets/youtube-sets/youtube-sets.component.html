@@ -1,10 +1,7 @@
 <div class="mixes-container">
     <div class="mix" *ngFor="let video of videos">
       <div *ngIf="!loadedVideos.has(video.videoId)" class="thumbnail-container">
-        <img
-          [src]="'https://i.ytimg.com/vi/' + video.videoId + '/hqdefault.jpg'"
-          alt="Mix Thumbnail"
-        />
+        <img [src]="'https://i.ytimg.com/vi/' + video.videoId + '/maxresdefault.jpg'" alt="Mix Thumbnail" />
         <div class="overlay">
           <button (click)="loadVideo(video.videoId)">Inhalte von YouTube laden</button>
         </div>

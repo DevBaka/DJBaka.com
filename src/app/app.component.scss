@@ -17,11 +17,13 @@
   
   /* Content Wrapper */
   .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh; /* Der Content Bereich soll mindestens 80% der Bildschirmhöhe einnehmen */
-  }
+    width: 100%;
+    max-width: 100%;
+    min-height: 80vh;
+    padding: 0;
+    display: block; /* Entfernt das flex-Layout */
+}
+
   
   /* Footer */
   app-footer {
