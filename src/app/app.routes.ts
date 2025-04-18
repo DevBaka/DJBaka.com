@@ -3,6 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { BlogPostComponent } from './components/blog/blog-post/blog-post.component';
 import { YoutubeSetsComponent } from './pages/sets/youtube-sets/youtube-sets.component';
+import { CommandsComponent } from './pages/commands/commands.component';
 
 export const routeConfig: Routes = [
     {
@@ -24,6 +25,11 @@ export const routeConfig: Routes = [
         path: 'mixes',
         component: YoutubeSetsComponent,
         title: 'Sets & Mixes'
+    },
+    {
+        path: 'commands',
+        component: CommandsComponent,
+        title: 'Twitch Commands'
     }
     
 ];

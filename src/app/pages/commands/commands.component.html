@@ -1,1 +1,17 @@
-<p>commands works!</p>
+<div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Command</th>
+          <th>Funktion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let cmd of commands">
+          <td><code>{{ cmd.command }}</code></td>
+          <td>{{ cmd.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

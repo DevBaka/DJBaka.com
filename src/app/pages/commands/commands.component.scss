@@ -1,0 +1,51 @@
+:host {
+    display: block;
+    padding: 2rem;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .table-wrapper {
+    overflow-x: auto;
+    background: #1e1e2f;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+  
+    th, td {
+      padding: 1rem;
+      text-align: left;
+    }
+  
+    thead {
+      background: #2d2d44;
+      th {
+        font-size: 1.1rem;
+        letter-spacing: 0.05em;
+        border-bottom: 2px solid #444;
+      }
+    }
+  
+    tbody {
+      tr {
+        transition: background 0.3s;
+  
+        &:nth-child(even) {
+          background-color: #2a2a3a;
+        }
+  
+        &:hover {
+          background-color: #3c3c5c;
+        }
+      }
+  
+      td {
+        border-bottom: 1px solid #333;
+      }
+    }
+  }
+  
