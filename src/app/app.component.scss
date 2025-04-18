@@ -47,5 +47,18 @@
     animation: fadeIn 2s ease-in-out;
   }
   
-  /* Weitere Anpassungen kannst du hier hinzufügen */
+  .app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  main {
+    margin-top: 80px; // oder je nach Höhe deines Headers
+    position: relative;
+    z-index: 1;
+    margin-top: 100px; // passt zum Header
+  }
   

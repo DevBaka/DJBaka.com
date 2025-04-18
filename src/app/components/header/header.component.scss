@@ -2,6 +2,8 @@
     background-color: #222; /* Dunkler Hintergrund */
     padding: 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für den Header */
+    z-index: 10;
+    position: relative; /* wichtig, sonst wirkt z-index nicht */
   }
   
   .navbar {
@@ -12,6 +14,15 @@
     margin: 0 auto;
     padding: 0 20px;
   }
+
+  .navbar ul li a {
+    min-height: var(--height);
+    color: #fff;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
   
   .navbar-logo {
     .logo {
@@ -21,6 +32,8 @@
   }
   
   .navbar-links {
+    cursor: pointer;
+    text-decoration: none;
     list-style: none;
     display: flex;
     gap: 30px;
@@ -41,6 +54,8 @@
   .navbar-links a:hover {
     color: #ff4081; /* Hover-Farbe für Links */
   }
+
+
   
   /* Responsive Design */
   @media screen and (max-width: 768px) {
