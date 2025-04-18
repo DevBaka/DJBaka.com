@@ -1,5 +1,7 @@
 <main *ngIf="blogPosts$ |  async as blogPosts">
-    <div class="blog-posts-container" *ngFor="let blogPost of blogPosts.items">
+    <div class="blog-posts-container fade-in fade-in-slow"
+    [ngClass]="{'fade-in-loaded fade-in fade-in-slow': blogPost}"
+    *ngFor="let blogPost of blogPosts.items">
         <img [src]="blogPost.fields.featuredImage.fields.file.url" alt="">
         <h2>{{ blogPost.fields.title }}</h2>
         <p class="author">{{ blogPost.fields.author }}</p>

@@ -3,11 +3,12 @@ import { ContentfulService } from '../../services/contentful.service';
 import { Observable } from 'rxjs';
 import { AsyncPipe, CommonModule, JsonPipe } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { FadeInOnScrollDirective } from '../../shared/fade-in-on-scroll.directive';
 
 @Component({
   selector: 'app-blog',
   standalone: true,
-  imports: [JsonPipe, AsyncPipe, CommonModule, RouterModule],
+  imports: [JsonPipe, AsyncPipe, CommonModule, RouterModule, FadeInOnScrollDirective],
   templateUrl: './blog.component.html',
   styleUrl: './blog.component.scss'
 })
