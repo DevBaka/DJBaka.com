@@ -1,23 +1,26 @@
 :host {
+  :host {
     display: block;
-    height: 100vh; /* Setzt die Höhe auf die gesamte Bildschirmhöhe */
-    width: 100%;   /* Stellt sicher, dass die Seite die gesamte Breite einnimmt */
-    overflow: hidden; /* Verhindert Scrollen, wenn du das nicht willst */
+    width: 100%;
   }
   
-  .home-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: url('/assets/background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-    text-align: center;
-    transform: perspective(1000px);
-    transition: transform 0.1s ease-out;
-  }
+}
+
+  
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('/assets/background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+
+
   
   h1 {
     font-size: 4rem;
