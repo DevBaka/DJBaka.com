@@ -1,11 +1,12 @@
 import { Component, HostListener } from '@angular/core';
 import { BlogComponent } from '../components/blog/blog.component';
 import { ColumnesLinksComponent } from "../components/columnes/columnes-links/columnes-links.component";
+import { ColumnesLinksBlackComponent } from "../components/columnes/columnes-links-black/columnes-links-black.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [BlogComponent, ColumnesLinksComponent, ColumnesLinksComponent],
+  imports: [BlogComponent, ColumnesLinksComponent, ColumnesLinksComponent, ColumnesLinksBlackComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

@@ -2,11 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser'; // ✅ Importieren
 import { YoutubeMixesService } from '../../../services/youtube-mixes.service';
+import { FadeInOnScrollDirective } from '../../../shared/fade-in-on-scroll.directive';
 
 @Component({
   selector: 'app-youtube-sets',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FadeInOnScrollDirective],
   templateUrl: './youtube-sets.component.html',
   styleUrl: './youtube-sets.component.scss'
 })

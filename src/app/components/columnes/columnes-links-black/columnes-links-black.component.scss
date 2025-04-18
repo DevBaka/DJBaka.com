@@ -1,0 +1,36 @@
+.social-button-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  .social-button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+  }
+  
+  .social-button i {
+    margin-right: 10px;
+    font-size: 1.2em;
+  }
+  
+  /* Individuelle Farben pro Plattform */
+  .social-button.discord { background: #5865F2; }
+  .social-button.spotify { background: #1DB954; }
+  .social-button.youtube { background: #FF0000; }
+  .social-button.twitch { background: #9146FF; }
+  .social-button.soundcloud { background: #FF5500; }
+  
+  .social-button:hover {
+    filter: brightness(1.15);
+  }
+  
