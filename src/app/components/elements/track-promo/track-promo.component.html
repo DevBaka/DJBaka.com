@@ -1,18 +1,22 @@
 <div class="track-promo-container fade-in fade-in-medium">
     <div class="track-promo-text fade-in fade-in-medium">
-      <span class="promo-label fade-in fade-in-slow"><strong>NEUER HARD TECHNO TRACK VERÖFFENTLICHT</strong></span>
-      <h1 class="fade-in fade-in-slow">DJBaka – Watta</h1>
-      <p class="fade-in fade-in-slow">Mit „DJBaka – Watta“ habe ich meinen ersten offiziellen Hard Techno Track veröffentlicht, welcher auf allen gängigen Plattformen zu hören ist!</p>
-      <p class="fade-in fade-in-slow">Klick unten auf den Button, um den Song anzuhören oder kostenlos herunterzuladen.</p>
-      <a class="promo-button fade-in fade-in-slow" href="https://djbaka.com/album/" target="_blank" rel="noopener noreferrer">Jetzt Anhören</a>
+      <span class="promo-label fade-in fade-in-slow" *ngIf="subtitle"><strong>{{ subtitle }}</strong></span>
+      <h1>{{ title }}</h1>
+      <p *ngIf="!description1">{{ description1 }}</p>
+      <p *ngIf="!description2">{{ description2 }}</p>
+      <p class="fade-in fade-in-slow">{{ description1 }}</p>
+      <p class="fade-in fade-in-slow">{{ description2 }}</p>
+      <a class="promo-button fade-in fade-in-slow" [href]="buttonLink" target="_blank" rel="noopener noreferrer">
+        {{ buttonText }}
+      </a>
     </div>
   
-    <div class="track-promo-image fade-in fade-in-medium">
-      <img src="https://djbaka.com/wp-content/uploads/2024/06/DJBaka-Watta-1024x1024.jpg"
-           alt="DJBaka – Watta Cover"
+    <div class="track-promo-image fade-in fade-in-slow">
+      <img [src]="imageUrl"
+           [alt]="title"
            width="500"
            height="500"
            loading="lazy" />
     </div>
-  </div>
+</div>
   
