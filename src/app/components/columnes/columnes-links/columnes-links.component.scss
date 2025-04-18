@@ -1,7 +1,8 @@
 .columne-links{
     padding-top: 50px;
     background-color: var(--color-bar);
-    height: 100px;
+  min-height: 100px; /* wenn du eine Mindesthöhe willst */
+
 }
 
 .columne-text{
@@ -21,7 +22,7 @@
   }
   
   .social-column {
-    width: 20%;
+    width: 15%;
     padding: 15px;
     text-align: center;
     margin: 10px;
