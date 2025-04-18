@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #353535;
+    color: var(--color-text);
 }
 
 header {
@@ -38,11 +38,11 @@ div span {
 }
 
 .blog-posts-container {
-    max-width: 600px;
+    max-width: var(--padding-content);
     margin: 0 auto;
     margin-bottom: 150px;
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: var(--color-background-blog);
 }
 
 .blog-posts-container img {
@@ -63,8 +63,8 @@ div span {
 
 .blog-posts-container a {
     text-decoration: none;
-    background-color: #353535;
-    color: white;
+    background-color: var(--color-button);
+    color: var(--color-text);
     padding: 10px 20px;
     border-radius: 2px;
     display: inline-block;

@@ -7,12 +7,18 @@
   
   body {
     font-family: 'Roboto', sans-serif;
-    background-color: #121212; /* Dunkles Thema für deinen Hard Techno Look */
-    color: #fff; /* Weißer Text auf dunklem Hintergrund */
+    /*background-color: #121212; /* Dunkles Thema für deinen Hard Techno Look */
+    /*color: #fff; /* Weißer Text auf dunklem Hintergrund */
+    background-color: var(--color-background);
+    color: var(--color-text);
+
   }
   
   main {
     padding: 20px;
+    /*background-color: #121212;*/
+    background-color: var(--color-background);
+    color: var(--color-text);
   }
   
   /* Content Wrapper */
@@ -27,8 +33,8 @@
   
   /* Footer */
   app-footer {
-    background-color: #333; /* Dunkler Footer */
-    color: #fff;
+    background-color: var(--color-background2); /* Dunkler Footer */
+    color: var(--color-text);
     padding: 20px 0;
     text-align: center;
   }
@@ -54,11 +60,3 @@
     width: 100%;
     z-index: 1000;
   }
-  
-  main {
-    margin-top: 80px; // oder je nach Höhe deines Headers
-    position: relative;
-    z-index: 1;
-    margin-top: 100px; // passt zum Header
-  }
-  

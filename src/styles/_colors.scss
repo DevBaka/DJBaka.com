@@ -1,0 +1,18 @@
+// Primärfarben in einer SCSS map (optional)
+$colors: (
+  primary: #ff4081,
+  secondary: #00e5ff,
+  background: #121212,
+  text: #ffffff,
+);
+
+// Default CSS Custom Properties (z.B. für dark theme)
+:root {
+  --color-primary: #ff4081;
+  --color-secondary: #00e5ff;
+  --color-background: #121212;
+  --color-background2: #333;
+  --color-background-blog: #202225;
+  --color-text: #ffffff;
+  --color-button: #353535;
+}

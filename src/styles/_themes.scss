@@ -1,0 +1,24 @@
+// LIGHT THEME
+.theme-light {
+    --color-primary: #6200ee;
+    --color-secondary: #03dac6;
+    --color-background: #ffffff;
+    --color-text: #000000;
+  }
+  
+  // DARK THEME
+  .theme-dark {
+    --color-primary: #ff4081;
+    --color-secondary: #00e5ff;
+    --color-background: #121212;
+    --color-text: #ffffff;
+  }
+  
+  // BRANDING THEME EXAMPLE
+  .theme-djbaka {
+    --color-primary: #e4007f;
+    --color-secondary: #fff600;
+    --color-background: #0d0d0d;
+    --color-text: #ffffff;
+  }
+  
