@@ -8,7 +8,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:DJBaka-Angular": "node dist/djbaka-angular/server/server.mjs",
-    "github-build": "ng build --configuration production --base-href 'https://devbaka.github.io/djbaka.com/'",
+    "github-build": "ng build --configuration production --base-href=/DJBaka.com/",
     "github-deploy": "npx angular-cli-ghpages --dir=dist/djbaka.com/browser --no-silent"
 
   },

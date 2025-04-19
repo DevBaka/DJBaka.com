@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { FadeInOnScrollDirective } from '../../../shared/fade-in-on-scroll.directive';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-track-promo',
   standalone: true,
-  imports: [FadeInOnScrollDirective],
+  imports: [CommonModule, FadeInOnScrollDirective],
   templateUrl: './track-promo.component.html',
   styleUrl: './track-promo.component.scss'
 })
