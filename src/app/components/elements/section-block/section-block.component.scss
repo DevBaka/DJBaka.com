@@ -7,6 +7,9 @@
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1200px;
+    opacity: 0; /* Startet unsichtbar */
+    transform: translateY(20px); /* Leichte Verschiebung nach unten */
+    animation: fadeIn 1.5s ease-out forwards; /* Fade-In-Effekt mit Bewegung */
   
     &.reverse {
       flex-direction: row-reverse;
@@ -43,3 +46,14 @@
     }
   }
   
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px); /* Beginnt leicht unten */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Endet in der ursprünglichen Position */
+    }
+  }

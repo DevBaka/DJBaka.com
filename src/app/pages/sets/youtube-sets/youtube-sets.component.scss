@@ -4,12 +4,18 @@
   align-items: center;
   gap: 20px;
   padding: 20px;
+  opacity: 0; /* Startet unsichtbar */
+  transform: translateY(20px); /* Leichte Verschiebung nach unten */
+  animation: fadeIn 1.5s ease-out forwards; /* Fade-In-Effekt mit Bewegung */
 }
 
 .mix {
   width: 100%; /* Volle Breite */
   max-width: 1200px; /* Optional: Begrenzung für bessere Darstellung auf großen Bildschirmen */
   text-align: center;
+  opacity: 0; /* Startet unsichtbar */
+  transform: translateY(20px); /* Leichte Verschiebung nach unten */
+  animation: fadeIn 3.5s ease-out forwards; /* Fade-In-Effekt mit Bewegung */
 }
 
 .thumbnail-container {
