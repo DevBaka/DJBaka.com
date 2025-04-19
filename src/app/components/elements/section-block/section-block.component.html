@@ -1,0 +1,11 @@
+<div class="section-block" [ngClass]="{ 'reverse': imageLeft }">
+    <div class="section-text">
+      <h2>{{ title }}</h2>
+      <div [innerHTML]="text"></div>
+    </div>
+  
+    <div class="section-image">
+      <img [src]="image" [alt]="title" />
+    </div>
+  </div>
+  
