@@ -4,6 +4,9 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Schatten für den Header */
     z-index: 10;
     position: relative; /* wichtig, sonst wirkt z-index nicht */
+    opacity: 0; /* Startet unsichtbar */
+    transform: translateY(20px); /* Leichte Verschiebung nach unten */
+    animation: fadeIn 1.5s ease-out forwards; /* Fade-In-Effekt mit Bewegung */
   }
   
   .navbar {
@@ -29,6 +32,9 @@
       width: 120px; /* Größe des Logos */
       height: auto;
     }
+    opacity: 0; /* Startet unsichtbar */
+    transform: translateY(20px); /* Leichte Verschiebung nach unten */
+    animation: fadeIn 10s ease-out forwards; /* Fade-In-Effekt mit Bewegung */
   }
   
   .navbar-links {
