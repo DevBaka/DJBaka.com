@@ -39,7 +39,10 @@
               <td>{{ emp.name }}</td>
               <td>{{ emp.email }}</td>
               <td>{{ emp.salary }}</td>
-              <td><button class="btn btn-dark btn-sm mt-4" (click)="removeData(emp.id)">Remove Employee</button></td>
+              <td>
+                <button class="btn btn-danger btn-sm mt-4" (click)="removeData(emp.id)">Remove Employee</button>
+                <button class="btn btn-warning btn-sm mt-4 mx-2" [routerLink]="['/employees', emp.id]">Edit Employee</button>
+                </td>
             </tr>
           </tbody>
         </table>

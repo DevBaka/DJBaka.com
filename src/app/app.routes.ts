@@ -7,6 +7,7 @@ import { CommandsComponent } from './pages/commands/commands.component';
 import path from 'path';
 import { UeberMichComponent } from './pages/ueber-mich/ueber-mich.component';
 import { EmployeesComponent } from './components/employees/employees.component';
+import { EmployeeEditComponent } from './components/employee-edit/employee-edit.component';
 
 export const routeConfig: Routes = [
     {
@@ -43,6 +44,10 @@ export const routeConfig: Routes = [
         path: 'employees',
         component: EmployeesComponent,
         title: 'Api test employees'
+    },
+    {
+        path: 'employees/:id', 
+        component: EmployeeEditComponent
     }
 
     
