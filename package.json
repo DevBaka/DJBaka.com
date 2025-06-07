@@ -10,7 +10,6 @@
     "serve:ssr:DJBaka-Angular": "node dist/djbaka-angular/server/server.mjs",
     "github-build": "ng build --configuration production --base-href=/DJBaka.com/",
     "github-deploy": "npx angular-cli-ghpages --dir=dist/djbaka.com/browser --no-silent"
-
   },
   "private": true,
   "dependencies": {
@@ -29,6 +28,9 @@
     "@contentful/rich-text-html-renderer": "^17.0.0",
     "@contentful/rich-text-types": "^17.0.0",
     "@fortawesome/fontawesome-free": "^6.7.2",
+    "@ng-bootstrap/ng-bootstrap": "^16.0.0",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
     "contentful": "^11.4.6",
     "express": "^4.18.2",
     "intersection-observer": "^0.12.2",
@@ -40,6 +42,7 @@
     "@angular-devkit/build-angular": "^17.3.0",
     "@angular/cli": "^17.3.12",
     "@angular/compiler-cli": "^17.3.0",
+    "@angular/localize": "^17.3.0",
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
