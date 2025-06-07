@@ -1,29 +1,26 @@
 <div class="container">
-    
-
-
-    <div class="row">
-        <div class="col mt-5 mb-5">
-            <div class="col-md-8 mx-auto">
-                <table>
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Salary</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                        <tr *ngFor="let emp of employees">
-                            <th scope="row">{{ emp.id }}</th>
-                            <td>{{emp.name}}</td>
-                            <td>{{emp.email}}</td>
-                            <td>{{emp.salary}}</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
+  <div class="row mt-5 mb-5">
+    <div class="col-md-8 mx-auto">
+      <div class="table-responsive">
+        <table class="table table-dark">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Salary</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let emp of employees">
+              <th scope="row">{{ emp.id }}</th>
+              <td>{{ emp.name }}</td>
+              <td>{{ emp.email }}</td>
+              <td>{{ emp.salary }}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
+  </div>
 </div>
