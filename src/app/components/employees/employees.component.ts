@@ -1,16 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../../service/data.service';
 import { response } from 'express';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-employees',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './employees.component.html',
   styleUrl: './employees.component.scss'
 })
 export class EmployeesComponent implements OnInit {
-  employess:any;
+  employees:any;
 
   constructor(private dataService:DataService){
 
@@ -21,7 +22,7 @@ export class EmployeesComponent implements OnInit {
 
   getEmployeesData(){
     this.dataService.getData().subscribe(res => {
-      console.log(res);
+      this.employees = res;
     });
   }
 
