@@ -4,11 +4,21 @@ import { HeaderComponent } from "./components/header/header.component";
 import { HomeComponent } from "./home/home.component";
 import { FooterComponent } from "./footer/footer.component";
 import { FadeInOnScrollDirective } from './shared/fade-in-on-scroll.directive';
+import { HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterModule, HeaderComponent, HomeComponent, FooterComponent, FadeInOnScrollDirective],
+  imports: 
+  [
+    RouterOutlet, 
+    RouterModule, 
+    HeaderComponent, 
+    HomeComponent, 
+    FooterComponent, 
+    FadeInOnScrollDirective, 
+    HttpClientModule
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
