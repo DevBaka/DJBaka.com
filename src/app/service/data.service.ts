@@ -15,4 +15,9 @@ export class DataService {
   insertData(data: any){
     return this.httpClient.post('http://127.0.0.1:8000/api/addEmployee', data);
   }
+
+  removeData(id: any){
+    console.log("Data oder so:" + id);
+    return this.httpClient.delete('http://127.0.0.1:8000/api/deleteEmployee/ '+ id);
+  }
 }

@@ -35,4 +35,11 @@ export class EmployeesComponent implements OnInit {
     })
   }
 
+  removeData(id:any){
+    console.log(id);
+    this.dataService.removeData(id).subscribe(res =>{
+      this.getEmployeesData();
+    })
+  }
+
 }
