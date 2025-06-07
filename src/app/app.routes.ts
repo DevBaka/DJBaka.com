@@ -6,6 +6,7 @@ import { YoutubeSetsComponent } from './pages/sets/youtube-sets/youtube-sets.com
 import { CommandsComponent } from './pages/commands/commands.component';
 import path from 'path';
 import { UeberMichComponent } from './pages/ueber-mich/ueber-mich.component';
+import { EmployeesComponent } from './components/employees/employees.component';
 
 export const routeConfig: Routes = [
     {
@@ -37,6 +38,11 @@ export const routeConfig: Routes = [
         path: 'aboutme',
         component: UeberMichComponent,
         title: 'Über mich'
+    },
+    {
+        path: 'employees',
+        component: EmployeesComponent,
+        title: 'Api test employees'
     }
 
     
